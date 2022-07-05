@@ -1,0 +1,39 @@
+<div class="calculator-body">
+  <mat-card style="width: 600px; margin: auto;  margin-bottom: 20px;">
+    <div class="">
+      <mat-form-field appearance="outline" style="width: 100%">
+        <input type="text" matInput disabled [(ngModel)]="displayedValue" >
+      </mat-form-field>
+    </div>
+  </mat-card>
+  <div class="calc-subbody">
+    <div class="calc-num">
+        <mat-card style="width: 450px; margin: auto;" class="calculator-numbers">
+            <mat-grid-list cols="3" rowHeight="1:1">
+              <mat-grid-tile><button mat-button (click)="click(1)">1</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(2)">2</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(3)">3</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(4)">4</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(5)">5</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(6)">6</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(7)">7</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(8)">8</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(9)">9</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="click(0)">0</button></mat-grid-tile>
+              <mat-grid-tile><button mat-button (click)="delete()">DELETE</button></mat-grid-tile>
+            </mat-grid-list>
+        </mat-card>
+    </div>
+    <div class="calc-ops" style="margin-left: 10px">
+      <mat-card style="width: 100px;  margin: auto; background: #468eb8;color: white;;" class="calculator-operations">
+        <mat-grid-list cols="1" rowHeight="1:1.2">
+          <mat-grid-tile><button mat-button (click)="defineOperation('add', '+')">+</button></mat-grid-tile>
+          <mat-grid-tile><button mat-button (click)="defineOperation('subtract', '-')">-</button></mat-grid-tile>
+          <mat-grid-tile><button mat-button (click)="defineOperation('divide', '/')">/</button></mat-grid-tile>
+          <mat-grid-tile><button mat-button (click)="defineOperation('multiply', '*')">*</button></mat-grid-tile>
+          <mat-grid-tile><button mat-button (click) = "calculate()"><strong>=</strong></button></mat-grid-tile>
+        </mat-grid-list>
+      </mat-card>
+    </div>
+  </div>
+</div>

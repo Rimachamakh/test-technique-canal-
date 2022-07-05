@@ -1,0 +1,14 @@
+button{
+    height: 100%;
+    width: 100%;
+}
+
+.calculator-numbers{
+    background: #468eb8;
+    color: white;
+}
+
+.calc-subbody {
+    display: flex;
+    justify-content: center;
+}
