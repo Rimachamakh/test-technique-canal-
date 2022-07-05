@@ -1,4 +1,4 @@
-# test-technique-canal-
+# test-technique-canal- Minimal calculator application
 This is a Minimal RESTful Calculator implemented whit Core backend using JAVA Spring (Spring boot 2) 
 REST APIs & Frontend using Angular 7 and Angular Material design 
 
