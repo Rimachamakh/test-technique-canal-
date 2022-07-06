@@ -1,4 +1,4 @@
-package fr.canal.calculator.model.operations;
+package fr.canal.calculator.service.operations;
 
 import lombok.Getter;
 import lombok.Setter;

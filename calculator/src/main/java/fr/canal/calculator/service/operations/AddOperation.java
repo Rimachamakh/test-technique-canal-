@@ -1,5 +1,6 @@
-package fr.canal.calculator.model.operations;
+package fr.canal.calculator.service.operations;
 
+import fr.canal.calculator.model.OperationResult;
 import fr.canal.calculator.util.Constants;
 import lombok.ToString;
 

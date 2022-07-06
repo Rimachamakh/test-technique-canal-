@@ -1,6 +1,7 @@
 package fr.canal.calculator.controller;
 
-import fr.canal.calculator.model.operations.*;
+import fr.canal.calculator.model.OperationResult;
+import fr.canal.calculator.service.operations.*;
 import fr.canal.calculator.util.Constants;
 import org.apache.logging.log4j.LogManager;
 import org.springframework.web.bind.annotation.*;
@@ -18,15 +19,12 @@ public class CalculatorController {
 
             logger.info("Starting add operation!");
 
-            //the result object that is returned to the client
             OperationResult result = new OperationResult();
 
-            //check if the operation is not null
             if(operation != null) {
                 logger.info("Input data:" + operation.toString());
                 result = this.calculate(operation);
             }else {
-                //if the operation is null return log it and return an message error to the client
                 logger.error("Operation is null");
                 result.setError(Boolean.TRUE);
                 result.setMessage("Operation is not initialized");
@@ -40,10 +38,8 @@ public class CalculatorController {
 
             logger.info("Starting subtract operation!");
 
-            //the result object that is returned to the client
             OperationResult result = new OperationResult();
 
-            //check if the operation is not null
             if(operation != null) {
                 logger.info("Input data:" + operation.toString());
                 result = this.calculate(operation);
@@ -61,15 +57,12 @@ public class CalculatorController {
 
             logger.info("Starting subtract operation!");
 
-            //the result object that is returned to the client
             OperationResult result = new OperationResult();
 
-            //check if the operation is not null
             if(operation != null) {
                 logger.info("Input data:" + operation.toString());
                 result = this.calculate(operation);
             }else {
-                //if the operation is null return log it and return an message error to the client
                 logger.error("Operation is null");
                 result.setError(Boolean.TRUE);
                 result.setMessage("Operation is not initialized");
@@ -83,15 +76,12 @@ public class CalculatorController {
 
             logger.info("Starting subtract operation!");
 
-            //the result object that is returned to the client
             OperationResult result = new OperationResult();
 
-            //check if the operation is not null
             if(operation != null) {
                 logger.info("Input data:" + operation.toString());
                 result = this.calculate(operation);
             }else {
-                //if the operation is null return log it and return an message error to the client
                 logger.error("Operation is null");
                 result.setError(Boolean.TRUE);
                 result.setMessage("Operation is not initialized");
